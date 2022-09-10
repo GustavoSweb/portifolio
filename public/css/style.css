@@ -7,6 +7,7 @@
   box-sizing: border-box;
   
 }
+
 @media (max-width: 750px){
   #parteI img{
     margin-top: 3em;
@@ -111,6 +112,40 @@ a{
 	opacity: 1;
   
 }
+#l1, #l2, #l3, #l4{
+  width: 92%;
+  height: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  z-index: 3;
+  border-radius: 50%;
+  
+}
+.l1:before, .l2:before, .l3:before, .l4:before{
+  content: '';
+  position: absolute;
+	width: 1em;
+	height: 2em;
+  background-color: #00FFF8;
+  bottom: 0;
+  opacity: 1;
+  
+  animation: giro 3s infinite ease-in-out;
+}
+@keyframes giro{
+  from{
+    transform: rotate(0)
+  }
+  to{
+    transform: rotate(360deg)
+  }
+}
+.l1, .l2, .l3, .l4{
+  position: relative;
+  overflow: hidden;
+}
 .l1{
   animation: estrada 1s 1 forwards;
 }
@@ -133,7 +168,7 @@ a{
 }
 #menu li{
   margin: 0.5em;
-  box-shadow: 1px 2px 4px 2px #20202080;
+  box-shadow: 0px 0px 4px 2px #20202080;
   width: 2em;
   height: 2em;
   display: flex;
