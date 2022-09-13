@@ -9,15 +9,19 @@
 }
 
 @media (max-width: 750px){
-  #parteI img{
+  #img{
     margin-top: 3em;
+  display: none;
+
   }
 }
 @media (max-width: 400px){
   #parteI h1{
   font-size: 2em !important;
   max-width: 370px;
+  
 }
+
 #parteI p{
   font-size: 0.8em !important;
   margin-top: 0.2em;
@@ -25,6 +29,10 @@
 }
 #parteI{
   padding: 1em;
+  
+}
+#img{
+  display: none;
 }
 }
 body{
@@ -32,7 +40,10 @@ body{
 }
 #text{
   margin-top: 10%;
-  
+  display: flex;
+  max-width: 30em;
+  align-items: center;
+  flex-direction: column;
 }
 #alinhamento{
   display: flex;
@@ -58,11 +69,17 @@ body{
 #parteI h1{
   font-size: 2.5em;
   max-width: 370px;
+  opacity: 0;
+  animation: animah 2.5s 1 forwards;
+  transform: translateY(-30px)
 }
 #parteI p{
   font-size: 1em;
   margin-top: 0.2em;
   max-width: 370px;
+  opacity: 0;
+  animation: animah 2.5s 0.1s 1 forwards;
+  transform: translateY(-30px)
 }
 a{
   text-decoration: none;
@@ -71,7 +88,10 @@ a{
 .azul{
   color: #00FFF8;
 }
-#parteI img{
+
+#img{
+  position: relative;
+  opacity: 0;
   max-width: 12em;
   max-height: 12em;
   width: 23vh;
@@ -79,13 +99,8 @@ a{
   border-radius: 50%;
   border: 2px solid #00FFF8;
   
-  
-}
-#img{
-  position: relative;
-  opacity: 0;
   transform: translateY(15px);
-  animation: animah 1.5s 0.2s 1 forwards ease-in-out, anima 1.5s 2s infinite ease-in-out alternate;
+  animation: animah 2.5s 0.2s 1 forwards ease-in-out, anima 1.5s 2s infinite ease-in-out alternate;
   
 }
 
@@ -123,29 +138,18 @@ a{
   border-radius: 50%;
   
 }
-.l1:before, .l2:before, .l3:before, .l4:before{
-  content: '';
-  position: absolute;
-	width: 1em;
-	height: 2.2em;
-  background-color: #00FFF8;
-  bottom: 0;
-  opacity: 1;
-  
-  animation: giro 3s infinite ease-in-out;
-}
-@keyframes giro{
-  from{
-    transform: rotate(0deg)
-  }
-  to{
-    transform: rotate(360deg)
-  }
+
+li:hover{
+  border: 2px solid #00FFF8;
+  box-shadow: 0px 0px 15px #00FFF8 !important;
+  width: 2.2em !important;
+  height: 2.2em !important;
 }
 .l1, .l2, .l3, .l4{
   position: relative;
   overflow: hidden;
 }
+
 .l1{
   animation: estrada 1s 1 forwards;
 }
@@ -171,12 +175,13 @@ a{
   box-shadow: 0px 0px 4px 2px #20202080;
   width: 2em;
   height: 2em;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transform: translate(-10px, 80%)
-  
+  transform: translate(-10px, 80%);
+  transition: 0.5s;
 }
 #menu{
   transform: translate(0, 50%)
@@ -194,11 +199,6 @@ ul{
     transform: translateY(20px)
   }
 }
-.animah{
-  opacity: 0;
-  animation: animah 2s 1 forwards;
-  transform: translateY(-30px)
-}
 @keyframes animah{
   from{
     opacity: 0;
@@ -209,8 +209,73 @@ ul{
     transform: translateY(0px);
   }
 }
-.animap{
-  opacity: 0;
-  animation: animah 2s 0.1s 1 forwards;
-  transform: translateY(-30px)
+#butao{
+  padding: 0.7em 3.5em 0.7em 3.5em;
+  background-color: #6B6B6B;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  margin-top: 20%;
+  
+}
+#butao:hover{
+  background-color: var(--corButao);
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 35px var(--corButao);
+}
+#butao:before{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background-color: #323232;
+}
+#butao span{
+  position: relative;
+  z-index: 1;
+}
+#butao i{
+  position: relative;
+  inset: 0;
+  display: block
+  
+}
+#butao:hover i:before{
+  width: 0.7em;
+  height: 0.7em;
+  transform: rotate(20deg);
+  background-color: var(--corButao);
+}
+#butao i:before{
+  content: '';
+  transition: 0.5s;
+  position: absolute;
+  left: 33px;
+  top: -15px;
+  width: 0.7em;
+  height: 2.5em;
+  border: 2px solid var(--corButao);
+  background-color: #323232;
+  z-index: 2;
+  box-shadow: 0px 0px 8px #000000
+}
+#esq:before{
+  left: -60px !important;
+  top: 15px !important;
+  transform: rotate(-90deg);
+  width: 2.5em !important;
+  height: 0.7em !important;
+}
+#butao:hover #esq:before{
+  width: 0.7em !important;
+  height: 0.7em !important;
+  transform: rotate(-20deg) !important;
+  left: -45px !important;
+  top: 30px !important;
+  background-color: var(--corButao);
 }
