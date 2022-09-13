@@ -7,7 +7,11 @@
   box-sizing: border-box;
   
 }
-
+@media (min-width: 751px){
+  #butao{
+    margin-top: 1.5em!important;
+  }
+}
 @media (max-width: 750px){
   #img{
     margin-top: 3em;
@@ -92,10 +96,10 @@ a{
 #img{
   position: relative;
   opacity: 0;
-  max-width: 12em;
-  max-height: 12em;
-  width: 23vh;
-  height: 23vh;
+  max-width: 10em;
+  max-height: 10em;
+  width: 23vw;
+  height: 23vw;
   border-radius: 50%;
   border: 2px solid #00FFF8;
   
@@ -273,7 +277,7 @@ ul{
   border: 2px solid var(--corButao);
   background-color: #323232;
   z-index: 2;
-  box-shadow: 0px 0px 8px #000000
+  box-shadow: 0px 0px 10px #00000040
 }
 #esq:before{
   left: -60px !important;
@@ -289,4 +293,8 @@ ul{
   left: -45px !important;
   top: 30px !important;
   background-color: var(--corButao);
+}
+a{
+  text-decoration: none !important;
+  color: white !important;
 }

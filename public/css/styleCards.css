@@ -1,0 +1,35 @@
+.card{
+  background-color: #313131;
+  width: 18em;
+  height: 12em;
+  margin-top: 5em;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  border-radius: 5px;
+  padding: 2em;
+  box-shadow: 3px 3px 10px 5px #00000090;
+}
+.card div{
+  
+}
+.card img{
+  width: 3em;
+  height: 3em;
+  margin: 1em;
+}
+.cardbody{
+  width: 100%;
+}
+#cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 750px){
+  .card{
+    margin-left: 1em;
+    margin-top: 1em;
+  }
+}
