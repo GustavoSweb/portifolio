@@ -222,7 +222,18 @@ ul{
   position: relative;
   display: flex;
   margin-top: 20%;
+  animation: animab 1s 1 forwards;
   
+}
+@keyframes animab{
+  from{
+    opacity: 0;
+    filter: blur(8px)
+  }
+  to{
+    opacity: 1;
+    filter: blur(0px)
+  }
 }
 #butao:hover{
   background-color: var(--corButao);
