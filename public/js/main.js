@@ -13,7 +13,7 @@ document.addEventListener('scroll', ()=> {
     }
     }else{
       
-    if (this.scrollY+400 >= element.offsetTop) {
+    if (this.scrollY+650 >= element.offsetTop) {
       element.classList.add('opacity')
       console.log("ok")
       
