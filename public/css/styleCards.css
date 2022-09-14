@@ -3,6 +3,7 @@
 }
 
 .card{
+  border-top: 3px solid #0BE3AA;
   background-color: #313131;
   width: 18em;
   height: 12em;
@@ -17,9 +18,7 @@
   opacity: 0;
   transition: 1s;
 }
-.card div{
-  
-}
+
 .card img{
   width: 3em;
   height: 3em;
@@ -37,5 +36,10 @@
   .card{
     margin-left: 1em;
     margin-top: 1em;
+  }
+}
+@media (min-width: 2000px){
+  #cards{
+    justify-content: space-around;
   }
 }
