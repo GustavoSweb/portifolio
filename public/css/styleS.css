@@ -3,13 +3,14 @@
   margin: 0;
   padding: 0;
   color: white;
+  z-index: 1;
   font-weight: normal !important;
 }
 #parteI{
   background-color: #000;
   height: 100%;
   overflow: hidden;
-  
+  z-index: 0;
   font-family: 'Ubuntu Mono';
   
 }
@@ -117,4 +118,70 @@ a{
   text-align: center;
   width: 100%;
   background-color: #313131;
+}
+#fundoanimado li{
+  z-index: 0;
+  width: 50px;
+  height: 50px;
+  list-style: none;
+  top: 110%;
+  border-radius: 5px;
+  animation: li 15s calc(var(--top)*1s) infinite alternate ease-in-out;
+  position: fixed;
+  
+  margin: 2em;
+}
+@keyframes li{
+  from{
+    top: 110%;
+    transform: rotate(0deg);
+    
+  }
+  to{
+    top: -20%;
+    transform: rotate(360deg);
+    
+  }
+}
+#fundoanimado{
+  
+}
+#fundoanimado li:nth-child(2n){
+  background-color: #FFFFFF12;
+  
+  
+}
+#fundoanimado li:nth-child(1){
+  left: 30%;
+}
+#fundoanimado li:nth-child(2){
+  left: 75%;
+}
+#fundoanimado li:nth-child(3){
+  left: 50%;
+}
+#fundoanimado li:nth-child(4){
+  left: -6%;
+}
+#fundoanimado li:nth-child(5){
+  left: 10%;
+}
+#fundoanimado li:nth-child(6){
+  left: 40%;
+}
+#fundoanimado li:nth-child(7){
+  left: 30%;
+}
+#fundoanimado li:nth-child(8){
+  left: 75%;
+}
+#fundoanimado li:nth-child(9){
+  left: 50%;
+}
+#fundoanimado li:nth-child(10){
+  left: -6%;
+}
+#fundoanimado li:nth-child(2n+1){
+  background-color: #FFFFFF08;
+  
 }
