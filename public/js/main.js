@@ -1,5 +1,5 @@
 const card = document.querySelectorAll(".card")
-
+console.log(-10-20)
 document.addEventListener('scroll', ()=> {
   
   card.forEach(element =>{
