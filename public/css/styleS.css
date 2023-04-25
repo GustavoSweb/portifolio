@@ -9,24 +9,28 @@
   background-color: #000;
   height: 100%;
   overflow: hidden;
-  padding: 1em;
+
   font-family: 'Ubuntu Mono';
   
 }
 #parteI h1{
+  margin-top: 2em;
+  padding-left: 1em;
   animation: animah 2s 1 forwards;
-  font-size: 1.7em;
+  font-size: 1.7em; 
 }
 .azul{
   color: #00FFF8;
 }
 .sobre{
   margin-bottom: 1em;
+  font-size: 30px;
+  
 }
 #apresentacao{
-  margin-top: 10vh;
+  
   height: 80vh;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 @keyframes animah{
   from{
@@ -38,10 +42,19 @@
     transform: translateY(0px);
   }
 }
+#projeto, #comeco, #linguagems{
+  margin-left: 1em;
+  margin-right: 1em;
+}
 .card{
+  margin-top: 1em;
    max-width: 200px;
-   width: 80%;
-  color:  #FFF;
-  background-color: #FFFFFF40;
-  padding: 20px;
+   width: 20%;
+   height: 20%;
+   max-height: 200px;
+   background-color: #caf7ff;
+   border-radius: 20px;
+   display: flex;
+   justify-content: center;
+   border: solid 3px rgb(10, 10, 10);
 }
