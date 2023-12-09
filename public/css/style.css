@@ -1,181 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Roboto+Mono:wght@300;400;500&display=swap');
 
 *{
   margin: 0;
   padding: 0;
-  color: white;
+}
+
+:root{
+  --tamanhoBoxPequena: 70px;
+  --dourado: #FFC700;
+  --cinzaclaro: #8C8C8C;
+}
+#Montanhas{
+  position: absolute;
+  width: 100%;
+  height: 247.88px;
+  top: calc(100vh - 147.88px);
+
+}
+
+#Inicio{
+  height: 100vh;
+}
+
+#Habilidades{
+  height: 100vh;
+  box-sizing: border-box;
+
+  padding-top: 40px;
+}
+
+#Conteudo{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Box-Titulo-Links{
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-left: 6vw;
+}
+#Conexão{
+  display: flex;
+}
+#Menu{
+  z-index: 1;
+
+  position: fixed;
+  left: calc((100vw - 50vw) / 2);
+  margin-top: 3em;
+  
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  padding-left: 13vw;
+  padding-right: 13vw;
+
   box-sizing: border-box;
   
-}
-@media (max-width: 750px){
-  #parteI img{
-    margin-top: 3em;
-  }
-}
-@media (max-width: 400px){
-  #parteI h1{
-  font-size: 2em !important;
-  max-width: 370px;
-}
-#parteI p{
-  font-size: 0.8em !important;
-  margin-top: 0.2em;
-  max-width: 370px;
-}
-#parteI{
-  padding: 1em;
-}
-}
-body{
-  background-color: #1D1D1D;
-}
-#text{
-  margin-top: 10%;
-  
-}
-#alinhamento{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 60vh;
-  width: 100%
-  
-}
-#parteI{
-  position: fixed;
-  background-color: #000;
-  text-align: center;
-  min-height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-family: 'Ubuntu Mono';
-}
-#parteI h1{
-  font-size: 2.5em;
-  max-width: 370px;
-}
-#parteI p{
-  font-size: 1em;
-  margin-top: 0.2em;
-  max-width: 370px;
-}
-a{
-  text-decoration: none;
-  color: white;
-}
-.azul{
-  color: #00FFF8;
-}
-#parteI img{
-  max-width: 12em;
-  max-height: 12em;
-  width: 23vh;
-  height: 23vh;
-  border-radius: 50%;
-  border: 2px solid #00FFF8;
-  
-  
-}
-#img{
-  position: relative;
-  opacity: 0;
-  transform: translateY(15px);
-  animation: animah 1.5s 0.2s 1 forwards ease-in-out, anima 1.5s 2s infinite ease-in-out alternate;
-  
+  width: 50vw;
+  border-radius: 30px;
+
+  background-color: white;
+  box-shadow: 0px 0px 30px 0px #00000010;
 }
 
-#img:before{
-  content: "Se quiser me contratar, me envie um email!";
+#Titulo{
+  font-size: 50px;
+  font-family: "JetBrains Mono";
+}
+.box{
   display: flex;
-  align-items: center;
-  width: 23vh;
-  height: 23vh;
-  max-width: 12em;
-  max-height: 12em;
-	position: absolute;
-	z-index: 10;
-	border-radius: 50%;
-  background-color: #00FFF8;
-  bottom: 0;
-  opacity: 0;
-  transition: 0.5s linear;
-}
-#img:hover{
-  animation-play-state: paused;
-}
-#img:hover:before{
-	opacity: 1;
-  
-}
-.l1{
-  animation: estrada 1s 1 forwards;
-}
-.l2{
-  animation: estrada 1s 0.1s 1 forwards;
-}
-.l3{
-  animation: estrada 1s 0.2s 1 forwards;
-}
-.l4{
-  animation: estrada 1s 0.3s 1 forwards;
-}
-@keyframes estrada{
-  from{
-    transform: translate(-10px, 80%)
-  }
-  to{
-    transform: translate(-10px, -60%)
-  }
-}
-#menu li{
-  margin: 0.5em;
-  box-shadow: 1px 2px 4px 2px #20202080;
-  width: 2em;
-  height: 2em;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  transform: translate(-10px, 80%)
-  
+  align-items: center;
+  width: var(--tamanhoBoxPequena);
+  height: var(--tamanhoBoxPequena);
+  border-radius: 20px;
+  margin-right: 1.5em;
+  margin-top: 1em;
 }
-#menu{
-  transform: translate(0, 50%)
+.box-dourada{
+  background-color: #FFC700;
+}
+.box-cinzaclaro{
+  background-color: #8C8C8C;
 }
 
-ul{
-  list-style-type: none;
-  display: flex;
+.icon{
+  width: 35px;
+  height: 35px;
 }
-@keyframes anima{
-  from{
-    transform: translateY(0)
-  }
-  to{
-    transform: translateY(20px)
-  }
+
+#Background{
+  background-image: url("../image/BackgroundFoto.svg");
+  background-size: cover;
+  width: 343.33px;
+  height: 358.01px;
+  margin-right: 3em;
 }
-.animah{
-  opacity: 0;
-  animation: animah 2s 1 forwards;
-  transform: translateY(-30px)
+
+#Habilidades h2{
+  color: #000000;
+  
+  font-family: "JetBrains Mono";
+  font-size: 34px;
+  margin: 6vw;
 }
-@keyframes animah{
-  from{
-    opacity: 0;
-    transform: translateY(15px)
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0px);
-  }
+
+@media(max-width: 880px){
+  
+  #Box-Titulo-Links{
+    justify-content: flex-start;
+    width: 100%;
 }
-.animap{
-  opacity: 0;
-  animation: animah 2s 0.1s 1 forwards;
-  transform: translateY(-30px)
+  #Titulo{
+    font-size: 6vw;
+  }
+  #Habilidades h2{
+  font-size: 5vw;
+  
+  }  
+  #Box-Titulo-Links{
+    width: 80vw;
+  }
+  #Background{
+    display: none;
+  }
 }
