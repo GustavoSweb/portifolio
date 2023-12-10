@@ -10,6 +10,30 @@
   --dourado: #ffc700;
   --cinzaclaro: #8c8c8c;
 }
+.alingEnvio{
+  display: flex;
+}
+#Contato{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#Email{
+  display: flex;
+  flex-direction: column;
+}
+
+.textBox{
+  width: 80vw !important;
+  max-width: 400px;
+}
+
+.inputBox{
+  width: 80vw !important;
+  max-width: 400px;
+}
+
 #Projetos {
   height: 100vh;
   display: flex;
@@ -121,7 +145,7 @@
 
   margin-left: 6vw;
 }
-#Conexão {
+.Conection {
   display: flex;
 }
 #Menu {
@@ -156,7 +180,7 @@
   align-items: center;
   width: var(--tamanhoBoxPequena);
   height: var(--tamanhoBoxPequena);
-  border-radius: 20px;
+  border-radius: 15px;
   margin-right: 1.5em;
   margin-top: 1em;
 }
@@ -205,4 +229,8 @@
   #Background {
     display: none;
   }
+  #Links{
+    display: none;
+  }
+  
 }
