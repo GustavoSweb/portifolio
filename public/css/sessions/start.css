@@ -1,0 +1,41 @@
+#Montanhas {
+  position: absolute;
+  width: 100%;
+  height: 247.88px;
+  top: calc(100vh - 147.88px);
+}
+
+#Inicio {
+  height: 100vh;
+}
+
+#Conteudo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Box-Titulo-Links {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-left: 6vw;
+}
+.Conection {
+  display: flex;
+}
+
+#Titulo {
+  font-size: 50px;
+  font-family: "JetBrains Mono";
+}
+
+#Background {
+  background-image: url("../image/BackgroundFoto.svg");
+  background-size: cover;
+  width: 343.33px;
+  height: 358.01px;
+  margin-right: 3em;
+}

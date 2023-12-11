@@ -1,0 +1,30 @@
+.alingEnvio {
+  display: flex;
+  justify-content: space-around;
+}
+#Contato {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 4em;
+}
+
+#Email {
+  display: flex;
+  flex-direction: column;
+}
+.inputsForm {
+  width: 80vw !important;
+  max-width: 400px;
+  padding: 0.9em;
+  margin-bottom: 1.5em;
+
+  box-shadow: 0px 0px 20px 0px #00000013;
+  border-radius: 15px;
+
+  font-family: "JetBrains Mono";
+  outline: none;
+  border: 1px solid #ffc80060;
+}
+.textBox {
+}

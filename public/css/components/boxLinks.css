@@ -1,0 +1,22 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--tamanhoBoxPequena);
+    height: var(--tamanhoBoxPequena);
+    border-radius: 15px;
+    margin-right: 1.5em;
+    margin-top: 1em;
+  }
+  .box-dourada {
+    background-color: #ffc700;
+  }
+  .box-cinzaclaro {
+    background-color: #8c8c8c;
+  }
+  
+.icon {
+    width: 35px;
+    height: 35px;
+  }
+  
