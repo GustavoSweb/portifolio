@@ -6,15 +6,24 @@
 }
 
 :root {
-  --tamanhoBoxPequena: 70px;
+  --sizeBoxNormal: 80px;
+  --sizeBoxSmall: 65px;
+
   --dourado: #ffc700;
   --cinzaclaro: #8c8c8c;
+  --font-family: "JetBrains Mono";
 }
-
+#linksBox{
+  box-sizing: border-box;
+  margin-bottom: 2em;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px 0px;
+}
 footer {
   height: 20vw;
   box-sizing: border-box;
-
+  
   display: flex;
   justify-content: space-around;
   box-shadow: 0px 0px 20px 1px #00000015;
@@ -46,7 +55,7 @@ footer {
 .subTitulo {
   color: #000000;
   width: 89vw;
-  font-family: "JetBrains Mono";
+  font-family: var(--font-family);
   font-size: 34px;
   margin: 6vw;
 }
