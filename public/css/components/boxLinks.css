@@ -6,7 +6,7 @@
     border-radius: 15px;
     margin-right: 1.5em;
     margin-top: 1em;
-    box-shadow: 0px 0px 30px 0px #00000030;
+    box-shadow: 0px 0px 20px 0px #00000020;
     background-color: white;
   }
   .box-normal{
@@ -16,7 +16,7 @@
   .box-small{
     width: var(--sizeBoxSmall);
     height: var(--sizeBoxSmall);
-
+    margin: 0%;
   }
   .box-dourada {
     background-color: #ffc700;
@@ -29,4 +29,7 @@
     width: 35px;
     height: 35px;
   }
-  
+.icon-small{
+  width: 30px;
+  height: 30px;
+}

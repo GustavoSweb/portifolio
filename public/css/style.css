@@ -7,7 +7,7 @@
 
 :root {
   --sizeBoxNormal: 80px;
-  --sizeBoxSmall: 65px;
+  --sizeBoxSmall: 70px;
 
   --dourado: #ffc700;
   --cinzaclaro: #8c8c8c;
@@ -18,18 +18,29 @@
   margin-bottom: 2em;
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 10px 0px;
+  gap: 10px;
+  justify-content: center;
 }
 footer {
-  height: 20vw;
+  height: 40vh;
+  max-height: 350px;
   box-sizing: border-box;
   
   display: flex;
   justify-content: space-around;
   box-shadow: 0px 0px 20px 1px #00000015;
-  padding-top: 5vw;
+  padding-top: 5vh;
 }
+footer h4{
+  font-family: var(--font-family);
+}
+footer p{
+  font-family: var(--font-family);
+}
+#footer-Right{
 
+  width: 360px;
+}
 #Menu {
   z-index: 1;
 
@@ -78,6 +89,18 @@ footer {
     display: none;
   }
   #Links {
+    display: none;
+  }
+  #LinksBox{
+    margin-bottom: 0em !important;
+  }
+  footer{
+    padding-top: 0.5em;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer p{
     display: none;
   }
 }
