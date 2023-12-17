@@ -1,6 +1,6 @@
 #Links p {
-    font-family: var(--font-family);
-    font-size: larger;
+  font-family: var(--font-family);
+  font-size: larger;
 }
 
 .alingEnvio {
@@ -29,8 +29,8 @@
   width: 100%;
   justify-content: space-around;
   padding-bottom: 4em;
-  background-color: #F9F9F9;
-
+  background-color: #f9f9f9;
+  padding-bottom: 5em;
 }
 
 #Email {
