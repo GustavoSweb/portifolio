@@ -132,4 +132,13 @@ header{
   #line {
     display: none;
   }
+  #Tabela{
+    display: none !important;
+  }
+  #sobreMim{
+    text-align:justify !important;
+  }
+  #buttonModal{
+    display: block !important;
+  }
 }
