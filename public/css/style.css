@@ -13,6 +13,9 @@
   --cinzaclaro: #8c8c8c;
   --font-family: "JetBrains Mono";
 }
+html{
+  scroll-behavior: smooth;
+}
 .dividingline {
   background-color: var(--dourado);
   width: 3px;
@@ -60,13 +63,14 @@ footer p {
   padding-bottom: 2em;
   width: 360px;
 }
-#Menu {
+header{
   z-index: 1;
-
   position: fixed;
   left: calc((100vw - 50vw) / 2);
   margin-top: 3em;
-
+}
+#Menu {
+  list-style: none;
   display: flex;
   justify-content: space-around;
   padding: 10px;
