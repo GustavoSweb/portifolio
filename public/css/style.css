@@ -46,6 +46,8 @@ footer {
 }
 footer h4 {
   font-family: var(--font-family);
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 footer p {
   font-family: var(--font-family);
