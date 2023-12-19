@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="./public/css/sessions/start.css" />
     <link rel="stylesheet" href="./public/css/components/TextEffects.css" />
     <link rel="stylesheet" href="./public/css/components/ModalTable.css" />
+    <link rel="stylesheet" href="./public/css/components/Menu.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="LinksNav">
         <ul id="Menu">
           <li>
             <a href="#Inicio">
@@ -51,6 +52,13 @@
             </a>
           </li>
         </ul>
+        <div id="buttonMenuMobile" onclick="OpenMenuMobile()">
+          <div id="hamburgerMenu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -265,5 +273,6 @@
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"></script>
     <script src="./public/js/ModalTable.js"></script>
+    <script src="./public/js/MenuMobile.js"></script>
   </body>
 </html>

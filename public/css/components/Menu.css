@@ -1,0 +1,105 @@
+header {
+  z-index: 1;
+  position: fixed;
+  left: 25vw;
+  margin-top: 3em;
+}
+#Menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+  padding: 10px 13vw 10px 13vw;
+
+  box-sizing: border-box;
+
+  width: 50vw;
+  border-radius: 30px;
+
+  background-color: white;
+  box-shadow: 0px 0px 30px 0px #00000010;
+}
+
+@media (max-width: 700px) {
+  #hamburgerMenu {
+    transition: 1s all;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: rotate(0deg);
+
+  }
+  .line {
+    width: 30px;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+  }
+  .line:nth-child(1){
+    transform: rotate(0deg) translateY(0px) translateX(0px);
+    transition: 1s all;
+  }
+  .line:nth-child(3){
+    transform: rotate(0deg) translateY(0px) translateX(0px);
+    transition: 1s all;
+}
+  .line:nth-child(2) {
+    width: 40px;
+    opacity: 100%;
+    transition: 0.5s all;
+  }
+  header {
+    left: calc(100vw - (55px + 30px));
+    top: calc(100vh - (20em + 110px + 30px));
+  }
+  #Menu {
+    flex-direction: column;
+    height: 0em;
+    width: 55px;
+    padding: 15px 10px 30px 10px;
+    border-radius: 30px 30px 0px 0px;
+    transform: translateY(20em);
+    overflow: hidden;
+  }
+  #LinksNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #buttonMenuMobile {
+    z-index: 3;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 5px #00000020;
+    background-color: #f9f9f9;
+    left: calc(100vw - (63px + 30px));
+    top: 84vh;
+  }
+}
+@keyframes MenuMobile {
+  from {
+    height: 0em;
+    transform: translateY(20em);
+  }
+  to {
+    height: 20em;
+    transform: translateY(20px);
+  }
+}
+@keyframes MenuMobileClose {
+  from {
+    height: 20em;
+    transform: translateY(20px);
+  }
+  to {
+    height: 0em;
+    transform: translateY(20em);
+  }
+}
