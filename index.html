@@ -12,43 +12,108 @@
     <link rel="stylesheet" href="./public/css/sessions/start.css" />
     <link rel="stylesheet" href="./public/css/components/TextEffects.css" />
     <link rel="stylesheet" href="./public/css/components/ModalTable.css" />
-    <link rel="stylesheet" href="./public/css/components/Menu.css">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="./public/css/components/Menu.css" />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <header>
       <nav id="LinksNav">
         <ul id="Menu">
+          <div id="boll"></div>
           <li>
-            <a href="#Inicio">
-              <img src="./public/image/User.svg" class="icon" alt="User Svg" />
+            <a href="#Inicio" class="alingLink">
+              <svg
+                viewBox="0 0 41 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon linkMenu"
+              >
+                <path
+                  d="M34.8626 36.7643C34.8626 30.3143 28.4459 25.0976 20.5459 25.0976C12.6459 25.0976 6.22925 30.3143 6.22925 36.7643M20.5459 20.0976C22.7561 20.0976 24.8757 19.2197 26.4385 17.6569C28.0013 16.0941 28.8792 13.9744 28.8792 11.7643C28.8792 9.55417 28.0013 7.43455 26.4385 5.87175C24.8757 4.30894 22.7561 3.43097 20.5459 3.43097C18.3358 3.43097 16.2162 4.30894 14.6534 5.87175C13.0906 7.43455 12.2126 9.55417 12.2126 11.7643C12.2126 13.9744 13.0906 16.0941 14.6534 17.6569C16.2162 19.2197 18.3358 20.0976 20.5459 20.0976Z"
+                  stroke="black"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </a>
           </li>
           <li>
-            <a href="#Habilidades">
-              <img
-                src="./public/image/Habilidades.svg"
-                class="icon"
-                alt="habilidades svg"
-              />
+            <a href="#Habilidades" class="alingLink">
+              <svg
+                width="41"
+                height="41"
+                viewBox="0 0 41 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon linkMenu"
+              >
+                <path
+                  d="M23.8792 3.43097C27.2125 3.43097 28.8792 5.1143 28.8792 8.48097V20.231C28.8792 23.5476 26.5292 24.831 23.6459 23.0976L21.4459 21.7643C20.9459 21.4643 20.1459 21.4643 19.6459 21.7643L17.4459 23.0976C14.5625 24.831 12.2125 23.5476 12.2125 20.231V8.48097C12.2125 5.1143 13.8792 3.43097 17.2125 3.43097H23.8792Z"
+                  stroke="#ACACAC"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.9126 8.41429C6.22927 9.36429 3.87927 12.8643 3.87927 19.931V24.981C3.87927 33.3976 7.21261 36.7643 15.5459 36.7643H25.5459C33.8793 36.7643 37.2126 33.3976 37.2126 24.981V19.931C37.2126 12.7476 34.7793 9.23095 28.8793 8.36429"
+                  stroke="#ACACAC"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </a>
           </li>
           <li>
-            <a href="#Projetos">
-              <img
-                src="./public/image/Projetos.svg"
-                class="icon"
-                alt="Projetos Svg"
-              />
+            <a href="#Projetos" class="alingLink">
+              <svg
+                width="41"
+                height="41"
+                viewBox="0 0 41 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon linkMenu"
+              >
+                <path
+                  d="M15.5459 36.7643H25.5459C33.8793 36.7643 37.2126 33.431 37.2126 25.0976V15.0976C37.2126 6.7643 33.8793 3.43097 25.5459 3.43097H15.5459C7.21261 3.43097 3.87927 6.7643 3.87927 15.0976V25.0976C3.87927 33.431 7.21261 36.7643 15.5459 36.7643Z"
+                  stroke="#ACACAC"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.5459 13.5976V29.5309M31.1793 25.5476V12.7309C31.1793 11.4476 30.1459 10.5143 28.8793 10.6143H28.8126C26.5793 10.7976 23.1959 11.9476 21.2959 13.131L21.1126 13.2476C20.8126 13.4309 20.2959 13.4309 19.9793 13.2476L19.7126 13.081C17.8293 11.8976 14.4459 10.781 12.2126 10.5976C10.9459 10.4976 9.9126 11.4476 9.9126 12.7143V25.5476C9.9126 26.5643 10.7459 27.531 11.7626 27.6476L12.0626 27.6976C14.3626 27.9976 17.9293 29.181 19.9626 30.2976L20.0126 30.3143C20.2959 30.4809 20.7626 30.4809 21.0293 30.3143C23.0626 29.1809 26.6459 28.0143 28.9626 27.6976L29.3126 27.6476C30.3459 27.531 31.1793 26.581 31.1793 25.5476Z"
+                  stroke="#ACACAC"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </a>
           </li>
           <li>
-            <a href="#Contato">
-              <img
-                src="./public/image/Contato.svg"
-                class="icon"
-                alt="Contato"
-              />
+            <a href="#Contato" class="alingLink">
+              <svg
+                width="42"
+                height="42"
+                viewBox="0 0 42 42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon linkMenu"
+              >
+                <path
+                  d="M17.8171 23.9164L23.9329 17.7834M13.1875 11.3943L27.6913 6.5597C34.2 4.39011 37.7363 7.94345 35.5838 14.4522L30.7492 28.9559C27.5034 38.7105 22.1734 38.7105 18.9275 28.9559L17.4925 24.6509L13.1875 23.2159C3.43294 19.9701 3.43294 14.6572 13.1875 11.3943Z"
+                  stroke="#ACACAC"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </a>
           </li>
         </ul>
@@ -62,7 +127,7 @@
       </nav>
     </header>
     <main>
-      <article id="Inicio">
+      <article id="Inicio" class="sessao">
         <section id="Conteudo">
           <section id="Box-Titulo-Links">
             <section id="Titulo">
@@ -81,7 +146,10 @@
                   />
                 </div>
               </a>
-              <a href="https://www.linkedin.com/in/gustavo-da-silva-5a7551252/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/gustavo-da-silva-5a7551252/"
+                target="_blank"
+              >
                 <div class="box box-normal box-dourada">
                   <img
                     src="./public/image/iconsLinks/Linkedin.svg"
@@ -100,49 +168,138 @@
         <img src="./public/image/Montanhas.svg" alt="" id="Montanhas" />
       </article>
 
-      <article id="Habilidades">
-        <h2 class="subTitulo">Sobre</h2>
-        <section id="Tabela">
-          <div id="textTabela">
-            <h3>HTML</h3>
-            <h3>CSS</h3>
-            <h3>NodeJs</h3>
-            <h3>JavaScript</h3>
-            <h3>React</h3>
-            <h3>Vue Js</h3>
-          </div>
-          <div id="expTabela">
-            <img src="./public/image/exp/HTMLEX.svg" alt="" />
-            <img src="./public/image/exp/CSSEX.svg"" alt="" /> <img
-            src="./public/image/exp/NODEJSEX.svg"" alt="" /> <img
-            src="./public/image/exp/JSEX.svg"" alt="" /> <img
-            src="./public/image/exp/REACTEX.svg"" alt="" /> <img
-            src="./public/image/exp/VUEEX.svg"" alt="" />
-          </div>
-        </section>
-        <section id="sobreMim">
-          <p>
-            Meu nome é <span class="textDourado">Gustavo</span>, sou aspirante a
-            desenvolvedor <span class="textDourado">Full Stack</span>, tenho 17
-            anos e moro em Buíque, Pernambuco. Estudo programação desde dezembro
-            de 2021 e desde então tenho alcançado diversas conquistas, tais como
-            chegar à fase nacional da Olimpíada Brasileira de Informática em
-            2022 e desenvolver um projeto com a Facepe. Estou sempre em busca de
-            novos desafios e oportunidades para aprimorar minhas habilidades
-            como desenvolvedor.
-          </p>
+      <article id="Habilidades" class="sessao">
+        <section class="pl-[6vw] w-[100%] flex items-center max-h-[100vh]">
+          <section>
+            <section id="sobreMim" class="flex flex-col">
+              <section class="flex flex-col mb-5">
+                <div class="flex items-center gap-4">
+                  <h3 class="text-[#00000080] text-[19px]">Sobre</h3>
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-[20px] h-[20px]"
+                  >
+                    <path
+                      d="M23.8792 3.43097C27.2125 3.43097 28.8792 5.1143 28.8792 8.48097V20.231C28.8792 23.5476 26.5292 24.831 23.6459 23.0976L21.4459 21.7643C20.9459 21.4643 20.1459 21.4643 19.6459 21.7643L17.4459 23.0976C14.5625 24.831 12.2125 23.5476 12.2125 20.231V8.48097C12.2125 5.1143 13.8792 3.43097 17.2125 3.43097H23.8792Z"
+                      stroke="#FFC700"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.9126 8.41429C6.22927 9.36429 3.87927 12.8643 3.87927 19.931V24.981C3.87927 33.3976 7.21261 36.7643 15.5459 36.7643H25.5459C33.8793 36.7643 37.2126 33.3976 37.2126 24.981V19.931C37.2126 12.7476 34.7793 9.23095 28.8793 8.36429"
+                      stroke="#FFC700"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h2 class="TitleSession text-3xl">Habilidades</h2>
+              </section>
+              <p class="text-[#00000088]">
+                Meu nome é <span class="text-black">Gustavo</span>, sou
+                aspirante a desenvolvedor
+                <span class="textDourado">Full Stack</span>, tenho 17 anos e
+                moro em Buíque, Pernambuco. Estudo programação desde dezembro de
+                2021 e desde então tenho alcançado diversas conquistas, tais
+                como chegar à fase nacional da Olimpíada Brasileira de
+                Informática em 2022 e desenvolver um projeto com a Facepe. Estou
+                sempre em busca de novos desafios e oportunidades para aprimorar
+                minhas habilidades como desenvolvedor.
+              </p>
+            </section>
+            <section class="grid grid-cols-7 gap-4 mt-[90px] max-w-[950px]">
+              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+                <img src="./public/image/" alt="" />
+              </div>
+              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+                <img src="./public/image/" alt="" />
+              </div>
+              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+                <img src="./public/image/" alt="" />
+              </div>
+              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+                <img src="./public/image/" alt="" />
+              </div>
+              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+                <img src="./public/image/" alt="" />
+              </div>
+              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+                <img src="./public/image/" alt="" />
+              </div>
+              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+                <img src="./public/image/" alt="" />
+              </div>
+              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+                <img src="./public/image/" alt="" />
+              </div>
+              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+                <img src="./public/image/" alt="" />
+              </div>
+              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+                <img src="./public/image/" alt="" />
+              </div>
+              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+                <img src="./public/image/" alt="" />
+              </div>
+              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+                <img src="./public/image/" alt="" />
+              </div>
+              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+                <img src="./public/image/" alt="" />
+              </div>
+              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+                <img src="./public/image/" alt="" />
+              </div>
+            </section>
+          </section>
+          <section
+            class="h-[550px] rounded-xl ml-[50px] w-[20vw] bg-[#EDEDED] mt-[50px]"
+          >
+            <div></div>
+          </section>
         </section>
         <section id="tableMobile">
           <button class="textDourado" id="buttonModal">Hablilidades</button>
-          <div id="modalTable">
-            
-          </div>
-          <div id="tableExpMobile">
-          </div>
+          <div id="modalTable"></div>
+          <div id="tableExpMobile"></div>
         </section>
       </article>
-      <article id="Projetos">
-        <h2 class="subTitulo">Projetos</h2>
+      <article id="Projetos" class="sessao pl-[6vw] pt-[150px]">
+        <section class="flex flex-col mb-5">
+          <div class="flex items-center gap-4">
+            <h3 class="text-[#00000080] text-[19px]">Todos os Niveis</h3>
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 41 41"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-[20px] h-[20px]"
+            >
+              <path
+                d="M23.8792 3.43097C27.2125 3.43097 28.8792 5.1143 28.8792 8.48097V20.231C28.8792 23.5476 26.5292 24.831 23.6459 23.0976L21.4459 21.7643C20.9459 21.4643 20.1459 21.4643 19.6459 21.7643L17.4459 23.0976C14.5625 24.831 12.2125 23.5476 12.2125 20.231V8.48097C12.2125 5.1143 13.8792 3.43097 17.2125 3.43097H23.8792Z"
+                stroke="#FFC700"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M11.9126 8.41429C6.22927 9.36429 3.87927 12.8643 3.87927 19.931V24.981C3.87927 33.3976 7.21261 36.7643 15.5459 36.7643H25.5459C33.8793 36.7643 37.2126 33.3976 37.2126 24.981V19.931C37.2126 12.7476 34.7793 9.23095 28.8793 8.36429"
+                stroke="#FFC700"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h2 class="TitleSession text-3xl">Projetos</h2>
+        </section>
         <section id="feedProjetos" class="dragscroll">
           <div class="boxFeed"></div>
           <div class="boxFeed"></div>
@@ -160,35 +317,8 @@
           <div class="boxFeed"></div>
         </section>
       </article>
-      <article id="Contato">
-        <section id="Links">
-          <p>
-            Se gostou do meu <span class="textDourado">trabalho</span>, não
-            hesite em <br />
-            me chamar!
-          </p>
-          <section class="Conection">
-            <a href="https://www.linkedin.com/in/gustavo-da-silva-5a7551252/" target="_blank">
-              <div class="box box-normal box-dourada">
-                <img
-                  src="./public/image/iconsLinks/Linkedin.svg"
-                  class="icon"
-                  alt="Icon do Linkedin Svg"
-                />
-              </div>
-            </a>
-
-            <a href="mailto:gustavodasilvama10@gmail.com" >
-              <div class="box box-normal box-cinzaclaro">
-                <img
-                  src="./public/image/iconsLinks/Email.svg"
-                  class="icon"
-                  alt="Icon do Emal"
-                />
-              </div>
-            </a>
-          </section>
-        </section>
+      <article id="Contato" class="sessao pt-[50px] pb-[100px]">
+        
 
         <form
           target="_blank"
@@ -217,6 +347,37 @@
             </button>
           </div>
         </form>
+        <section id="Links">
+          <p>
+            Se gostou do meu <span class="textDourado">trabalho</span>, não
+            hesite em <br />
+            me chamar!
+          </p>
+          <section class="Conection">
+            <a
+              href="https://www.linkedin.com/in/gustavo-da-silva-5a7551252/"
+              target="_blank"
+            >
+              <div class="box box-normal box-dourada">
+                <img
+                  src="./public/image/iconsLinks/Linkedin.svg"
+                  class="icon"
+                  alt="Icon do Linkedin Svg"
+                />
+              </div>
+            </a>
+
+            <a href="mailto:gustavodasilvama10@gmail.com">
+              <div class="box box-normal box-cinzaclaro">
+                <img
+                  src="./public/image/iconsLinks/Email.svg"
+                  class="icon"
+                  alt="Icon do Emal"
+                />
+              </div>
+            </a>
+          </section>
+        </section>
       </article>
       <footer>
         <section id="footer-Left">
@@ -230,7 +391,10 @@
         </div>
         <section id="footer-Right">
           <section id="linksBox">
-            <a href="https://www.linkedin.com/in/gustavo-da-silva-5a7551252/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/gustavo-da-silva-5a7551252/"
+              target="_blank"
+            >
               <div class="box-small box">
                 <img
                   src="./public/image/iconsLinks/LinkedinBlack.svg"
@@ -264,12 +428,8 @@
                 />
               </div>
             </a>
-            <div class="box-small box">
-              
-            </div>
-            <div class="box-small box">
-              
-            </div>
+            <div class="box-small box"></div>
+            <div class="box-small box"></div>
           </section>
           <p class="cinza">
             “ É em meio a <span class="textDourado">dificuldade</span> que se
@@ -281,5 +441,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"></script>
     <script src="./public/js/ModalTable.js"></script>
     <script src="./public/js/MenuMobile.js"></script>
+    <script src="./public/js/MenuLinks.js"></script>
   </body>
 </html>

@@ -4,6 +4,21 @@ header {
   left: 25vw;
   margin-top: 3em;
 }
+#boll{
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: var(--dourado);
+  position: absolute;
+}
+.alingLink{
+  display: flex;
+  align-items: center;
+  justify-content: center;                            
+}
+#Menu li{
+  z-index: 3;
+}
 #Menu {
   list-style: none;
   display: flex;
@@ -13,14 +28,14 @@ header {
 
   box-sizing: border-box;
 
-  width: 50vw;
+  min-width: 300px;
   border-radius: 30px;
 
   background-color: white;
   box-shadow: 0px 0px 30px 0px #00000010;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   #hamburgerMenu {
     transition: 1s all;
     width: 100%;
