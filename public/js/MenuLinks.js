@@ -13,7 +13,7 @@ function SelectPath(icon,
 
 function ScrollLinks() {
   let select;
-  boll.style = `left:${icons[0].getBoundingClientRect().left-238}px`
+  boll.style = `left:${icons[0].getBoundingClientRect().left-320}px`
   document.addEventListener("scroll", () => {
     const pageY = window.scrollY;
 
@@ -29,7 +29,7 @@ function ScrollLinks() {
         var icon = icons[index]
         SelectPath(select, "#ACACAC");
         SelectPath(icon, "black");
-        boll.style = `left:${icon.getBoundingClientRect().left-238}px`
+        boll.style = `left:${icon.getBoundingClientRect().left-320}px`
         select = icon;
       }
     }

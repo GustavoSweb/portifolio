@@ -18,6 +18,17 @@
       src="https://www.gstatic.com/charts/loader.js"
     ></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              whiteNeve: '#f9f9f9',
+            }
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -171,7 +182,7 @@
       <article id="Habilidades" class="sessao">
         <section class="pl-[6vw] w-[100%] flex items-center max-h-[100vh]">
           <section>
-            <section id="sobreMim" class="flex flex-col">
+            <section class="flex flex-col max-w-[900px] pt-5">
               <section class="flex flex-col mb-5">
                 <div class="flex items-center gap-4">
                   <h3 class="text-[#00000080] text-[19px]">Sobre</h3>
@@ -214,48 +225,50 @@
               </p>
             </section>
             <section class="grid grid-cols-7 gap-4 mt-[90px] max-w-[950px]">
-              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+              <div class="cardIcon relative right-0 top-0 transition-all w-[120px] h-[120px] rounded-xl shadow-md bg-white transform hover:scale-110 hover:bg-whiteNeve hover:shadow-xl">
                 <img src="./public/image/" alt="" />
               </div>
-              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+              <div class="cardIcon relative right-0 top-0 transition-all w-[120px] h-[120px] rounded-xl shadow-md bg-white transform hover:scale-110 hover:bg-whiteNeve hover:shadow-xl">
                 <img src="./public/image/" alt="" />
               </div>
-              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+              <div class="cardIcon relative right-0 top-0 transition-all w-[120px] h-[120px] rounded-xl shadow-md bg-white transform hover:scale-110 hover:bg-whiteNeve hover:shadow-xl">
                 <img src="./public/image/" alt="" />
               </div>
-              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+              <div class="cardIcon relative right-0 top-0 transition-all w-[120px] h-[120px] rounded-xl shadow-md bg-white transform hover:scale-110 hover:bg-whiteNeve hover:shadow-xl">
                 <img src="./public/image/" alt="" />
               </div>
-              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+              <div class="cardIcon relative right-0 top-0 transition-all w-[120px] h-[120px] rounded-xl shadow-md bg-white transform hover:scale-110 hover:bg-whiteNeve hover:shadow-xl">
                 <img src="./public/image/" alt="" />
               </div>
-              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+              <div class="cardIcon relative right-0 top-0 transition-all w-[120px] h-[120px] rounded-xl shadow-md bg-white transform hover:scale-110 hover:bg-whiteNeve hover:shadow-xl">
                 <img src="./public/image/" alt="" />
               </div>
-              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+              <div class="cardIcon relative right-0 top-0 transition-all w-[120px] h-[120px] rounded-xl shadow-md bg-white transform hover:scale-110 hover:bg-whiteNeve hover:shadow-xl">
                 <img src="./public/image/" alt="" />
               </div>
-              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+              <div class="cardIcon relative right-0 top-0 transition-all w-[120px] h-[120px] rounded-xl shadow-md bg-white transform hover:scale-110 hover:bg-whiteNeve hover:shadow-xl">
                 <img src="./public/image/" alt="" />
               </div>
-              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+              <div class="cardIcon relative right-0 top-0 transition-all w-[120px] h-[120px] rounded-xl shadow-md bg-white transform hover:scale-110 hover:bg-whiteNeve hover:shadow-xl">
                 <img src="./public/image/" alt="" />
               </div>
-              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+              <div class="cardIcon relative right-0 top-0 transition-all w-[120px] h-[120px] rounded-xl shadow-md bg-white transform hover:scale-110 hover:bg-whiteNeve hover:shadow-xl">
                 <img src="./public/image/" alt="" />
               </div>
-              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+              <div class="cardIcon relative right-0 top-0 transition-all w-[120px] h-[120px] rounded-xl shadow-md bg-white transform hover:scale-110 hover:bg-whiteNeve hover:shadow-xl">
                 <img src="./public/image/" alt="" />
               </div>
-              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+              <div class="cardIcon relative right-0 top-0 transition-all w-[120px] h-[120px] rounded-xl shadow-md bg-white transform hover:scale-110 hover:bg-whiteNeve hover:shadow-xl">
                 <img src="./public/image/" alt="" />
               </div>
-              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+              <div class="cardIcon relative right-0 top-0 transition-all w-[120px] h-[120px] rounded-xl shadow-md bg-white transform hover:scale-110 hover:bg-whiteNeve hover:shadow-xl">
                 <img src="./public/image/" alt="" />
               </div>
-              <div class="w-[120px] h-[120px] rounded-xl shadow-md">
+              <div class="cardIcon relative right-0 top-0 transition-all w-[120px] h-[120px] rounded-xl shadow-md bg-white transform hover:scale-110 hover:bg-whiteNeve hover:shadow-xl">
                 <img src="./public/image/" alt="" />
               </div>
+              
+              
             </section>
           </section>
           <section
@@ -442,5 +455,6 @@
     <script src="./public/js/ModalTable.js"></script>
     <script src="./public/js/MenuMobile.js"></script>
     <script src="./public/js/MenuLinks.js"></script>
+    <script src="./public/js/SkillFeed.js"></script>
   </body>
 </html>

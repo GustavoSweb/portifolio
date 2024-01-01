@@ -17,7 +17,14 @@ header {
   justify-content: center;                            
 }
 #Menu li{
+  transition: all 0.5s;
   z-index: 3;
+  opacity: 70%;
+}
+#Menu li:hover{
+  transform: scale(1.05);
+  opacity: 100%;
+
 }
 #Menu {
   list-style: none;
