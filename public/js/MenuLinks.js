@@ -1,19 +1,17 @@
 const icons = document.querySelectorAll(".linkMenu");
 const sessoes = document.querySelectorAll(".sessao");
-const boll = document.getElementById('boll')
-function SelectPath(icon, 
-  color) {
+const boll = document.getElementById("boll");
+function SelectPath(icon, color) {
   if (!icon || !color) return;
   let paths = icon.children;
   for (let index = 0; index < paths.length; index++) {
     paths[index].setAttribute("stroke", color);
   }
-  
 }
 
 function ScrollLinks() {
   let select;
-  boll.style = `left:${icons[0].getBoundingClientRect().left-320}px`
+  boll.style = `left:${icons[0].getBoundingClientRect().left - 320}px`;
   document.addEventListener("scroll", () => {
     const pageY = window.scrollY;
 
@@ -26,13 +24,14 @@ function ScrollLinks() {
         (pageY >= faixaInferior && pageY <= faixaSuperior) ||
         pageY + 100 > sessoes[sessoes.length - 1].offsetTop
       ) {
-        var icon = icons[index]
+        var icon = icons[index];
         SelectPath(select, "#ACACAC");
         SelectPath(icon, "black");
-        boll.style = `left:${icon.getBoundingClientRect().left-320}px`
+        boll.style = `left:${icon.getBoundingClientRect().left - 320}px`;
         select = icon;
       }
     }
   });
 }
 ScrollLinks();
+console.log("teste");

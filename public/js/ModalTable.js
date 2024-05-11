@@ -5,24 +5,20 @@ const tableExpMobile = document.querySelector("#tableExpMobile");
 buttonModal.addEventListener("click", () => {
   modalBackground.style.display == "flex"
     ? (modalBackground.style.display = "none")
-    : (
-        modalBackground.style.display = "flex",
-        modalBackground.style.animation = "backgroundAnimation 0.5s ease-out forwards"
+    : ((modalBackground.style.display = "flex"),
+      (modalBackground.style.animation =
+        "backgroundAnimation 0.5s ease-out forwards"));
 
-    );
-
-    tableExpMobile.style.display == "flex"
+  tableExpMobile.style.display == "flex"
     ? (tableExpMobile.style.display = "none")
-    : (
-        tableExpMobile.style.display = "flex",
-        tableExpMobile.style.animation = "modalAnimation 0.5s ease-out forwards"
-    )
+    : ((tableExpMobile.style.display = "flex"),
+      (tableExpMobile.style.animation =
+        "modalAnimation 0.5s ease-out forwards"));
 });
-modalBackground.addEventListener("click", ()=>{
-    modalBackground.style.display = "none"
-    tableExpMobile.style.display = "none"
-
-})
+modalBackground.addEventListener("click", () => {
+  modalBackground.style.display = "none";
+  tableExpMobile.style.display = "none";
+});
 google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(drawChart);
 
