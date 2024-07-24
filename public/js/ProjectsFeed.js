@@ -1,7 +1,7 @@
 async function getProjects() {
   try {
     const projects = await axios.get(
-      "http://tefly-production.up.railway.app/projects"
+      "https://tefly-production.up.railway.app/projects"
     );
     return projects.data;
   } catch (err) {

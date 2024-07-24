@@ -3,7 +3,7 @@ const content_skills = document.getElementById("content-skills");
 async function getSkills() {
   try {
     const skills = await axios.get(
-      "http://tefly-production.up.railway.app/skills"
+      "https://tefly-production.up.railway.app/skills"
     );
     return skills.data;
   } catch (err) {

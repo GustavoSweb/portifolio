@@ -9,7 +9,7 @@ setTimeout(() => {
 
   async function get_projects_skill(id) {
     const { data } = await axios.get(
-      `http://tefly-production.up.railway.app/skills/${id}/projects`
+      `https://tefly-production.up.railway.app/skills/${id}/projects`
     );
     projectsSkillFeed.innerHTML = "";
     console.log(data);
