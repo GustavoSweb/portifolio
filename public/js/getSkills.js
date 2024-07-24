@@ -3,7 +3,7 @@ const content_skills = document.getElementById("content-skills");
 async function getSkills() {
   try {
     const skills = await axios.get(
-      "https://projects-api-three.vercel.app/skills"
+      "http://tefly-production.up.railway.app/skills"
     );
     return skills.data;
   } catch (err) {
@@ -16,10 +16,20 @@ async function appendChildSkills() {
     const skills = await getSkills();
 
     skills.forEach((skill) => {
+      console.log(skill);
       const div = document.createElement("div");
       const img = document.createElement("img");
+      img.src = skill.background_url;
+      img.classList.add("w-[70%]", "h-[70%]");
+      div.id = skill.id;
+      div.title = skill.title;
       div.classList.add(
+        "h-[100px]",
+        "w-[100px]",
         "cardIcon",
+        "flex",
+        "justify-center",
+        "items-center",
         "relative",
         "right-0",
         "top-0",

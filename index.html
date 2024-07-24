@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio</title>
     <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./public/css/components/buttonsStyle.css" />
     <link rel="stylesheet" href="./public/css/components/boxLinks.css" />
     <link rel="stylesheet" href="./public/css/sessions/about.css" />
     <link rel="stylesheet" href="./public/css/sessions/contact.css" />
@@ -23,10 +24,21 @@
         theme: {
           screens: {
             "2xl": "1392px",
+
+            sm: "640px",
+
+            md: "768px",
+
+            lg: "1024px",
+
+            xl: "1280px",
           },
           extend: {
             colors: {
               whiteNeve: "#f9f9f9",
+              dourado: "#ffc700",
+              emphaseTextDourado: "#6B5400",
+              cinza: "#404040",
             },
           },
         },
@@ -150,40 +162,77 @@
                 Eu sou Gustavo, Fullstack developer
               </h1>
             </section>
-            <section class="Conection">
-              <a href="https://github.com/GustavoSweb" target="_blank">
-                <div class="box box-normal box-cinzaclaro">
-                  <img
-                    src="./public/image/iconsLinks/Github.svg"
-                    class="icon"
-                    alt="Icon do Github Svg"
-                  />
-                </div>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/gustavo-da-silva-5a7551252/"
-                target="_blank"
-              >
-                <div class="box box-normal box-dourada">
-                  <img
-                    src="./public/image/iconsLinks/Linkedin.svg"
-                    class="icon"
-                    alt="Icon do Linkedin Svg"
-                  />
-                </div>
-              </a>
+            <section class="links-start">
+              <section class="Conection hidden lg:flex">
+                <a href="https://github.com/GustavoSweb" target="_blank">
+                  <div class="box box-normal box-bordercinza">
+                    <img
+                      src="./public/image/iconsLinks/Github.svg"
+                      class="icon"
+                      alt="Icon do Github Svg"
+                    />
+                  </div>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/gustavo-da-silva-5a7551252/"
+                  target="_blank"
+                >
+                  <div class="box box-normal box-cinza">
+                    <img
+                      src="./public/image/iconsLinks/Linkedin.svg"
+                      class="icon"
+                      alt="Icon do Linkedin Svg"
+                    />
+                  </div>
+                </a>
+              </section>
+              <div class="flex gap-[30px] items-center">
+                <button class="bigButtonEmphase">CURRICULO</button>
+                <a
+                  href="https://github.com/GustavoSweb"
+                  target="_blank"
+                  class="lg:hidden"
+                >
+                  <div
+                    class="box box-normal box-bordercinza transform scale-[0.9]"
+                  >
+                    <img
+                      src="./public/image/iconsLinks/Github.svg"
+                      class="icon"
+                      alt="Icon do Github Svg"
+                    />
+                  </div>
+                </a>
+              </div>
             </section>
           </section>
-          <section id="Perfil">
-            <div id="Background"></div>
+          <section id="Perfil hidden xl:block">
+            <div id="Background">
+              <svg
+                width="344"
+                height="358"
+                viewBox="0 0 344 358"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M208.544 328.725C138.544 338.725 44.5437 338.725 26.5437 264.725C26.5437 164.725 56.5438 176.725 102.544 132.725C151.768 85.6407 138.544 28.7252 220.544 24.7252C302.544 20.7252 312.544 142.725 316.544 196.725C320.544 250.725 273.88 319.391 208.544 328.725Z"
+                  fill="#FFE68D"
+                />
+                <path
+                  d="M179.604 332.996C108.975 329.596 16.6664 311.843 12.966 235.775C31.852 137.575 59.0459 155.025 112.528 120.504C169.759 83.5635 167.521 25.1747 248.801 36.7332C330.081 48.2917 316.86 169.985 310.59 223.768C304.319 277.552 245.527 336.17 179.604 332.996Z"
+                  fill="#FFC700"
+                />
+              </svg>
+            </div>
           </section>
         </section>
 
         <img src="./public/image/Montanhas.svg" alt="" id="Montanhas" />
       </article>
 
-      <article id="Habilidades" class="sessao">
-        <section class="pl-[6vw] w-[100%] flex items-center max-h-[100vh]">
+      <article id="Habilidades" class="sessao mt-[50px] md:mt-0">
+        <section class="pl-[6vw] w-[100%] flex items-center min-h-[600px]">
           <section>
             <section class="flex flex-col max-w-[900px] pt-5">
               <section class="flex flex-col mb-5">
@@ -213,7 +262,7 @@
                     />
                   </svg>
                 </div>
-                <h2 class="TitleSession text-3xl">Habilidades</h2>
+                <h2 class="TitleSession">Habilidades</h2>
               </section>
               <p class="text-[#00000088]">
                 Meu nome é <span class="text-black">Gustavo</span>, sou
@@ -228,70 +277,80 @@
               </p>
             </section>
             <section
-              class="grid grid-cols-7 gap-4 mt-[90px] max-w-[950px]"
+              class="flex flex-wrap xl:grid xl:grid-cols-7 gap-4 mt-[90px] max-w-[950px] mb-[90px]"
               id="content-skills"
             ></section>
           </section>
           <section
-            class="hidden 2xl:block h-[550px] rounded-xl ml-[50px] w-[20vw] bg-[#EDEDED] mt-[50px]"
+            class="hidden 2xl:block h-[550px] rounded-xl ml-[50px] w-[20vw] bg-[#EDEDED] mt-[50px] py-[26px] px-[20px]"
           >
-            <div></div>
+            <div
+              id="content-skill-selected"
+              class="flex flex-row-reverse justify-end gap-[11px] items-center"
+            ></div>
+            <div class="flex justify-center py-[34px]">
+              <hr class="h-[3px] w-[50%] bg-dourado rounded-lg" />
+            </div>
+            <div
+              id="projectsSkillFeed"
+              class="gap-[30px] flex flex-col items-center w-[100%]"
+            ></div>
           </section>
         </section>
-        <section id="tableMobile">
-          <button class="textDourado" id="buttonModal">Hablilidades</button>
-          <div id="modalTable"></div>
-          <div id="tableExpMobile"></div>
-        </section>
       </article>
-      <article id="Projetos" class="sessao pl-[6vw] pt-[150px]">
-        <section class="flex flex-col mb-5">
-          <div class="flex items-center gap-4">
-            <h3 class="text-[#00000080] text-[19px]">Todos os Niveis</h3>
-            <svg
-              width="30"
-              height="30"
-              viewBox="0 0 41 41"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-[20px] h-[20px]"
-            >
-              <path
-                d="M23.8792 3.43097C27.2125 3.43097 28.8792 5.1143 28.8792 8.48097V20.231C28.8792 23.5476 26.5292 24.831 23.6459 23.0976L21.4459 21.7643C20.9459 21.4643 20.1459 21.4643 19.6459 21.7643L17.4459 23.0976C14.5625 24.831 12.2125 23.5476 12.2125 20.231V8.48097C12.2125 5.1143 13.8792 3.43097 17.2125 3.43097H23.8792Z"
-                stroke="#FFC700"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M11.9126 8.41429C6.22927 9.36429 3.87927 12.8643 3.87927 19.931V24.981C3.87927 33.3976 7.21261 36.7643 15.5459 36.7643H25.5459C33.8793 36.7643 37.2126 33.3976 37.2126 24.981V19.931C37.2126 12.7476 34.7793 9.23095 28.8793 8.36429"
-                stroke="#FFC700"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+      <article id="Projetos" class="sessao lg:pl-[6vw] pt-[150px]">
+        <section class="flex justify-center">
+          <div class="flex flex-col mb-5 items-center">
+            <div class="flex items-center gap-4">
+              <h3 class="text-[#00000080] text-[19px]">Todos os Niveis</h3>
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 41 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[20px] h-[20px]"
+              >
+                <path
+                  d="M23.8792 3.43097C27.2125 3.43097 28.8792 5.1143 28.8792 8.48097V20.231C28.8792 23.5476 26.5292 24.831 23.6459 23.0976L21.4459 21.7643C20.9459 21.4643 20.1459 21.4643 19.6459 21.7643L17.4459 23.0976C14.5625 24.831 12.2125 23.5476 12.2125 20.231V8.48097C12.2125 5.1143 13.8792 3.43097 17.2125 3.43097H23.8792Z"
+                  stroke="#FFC700"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.9126 8.41429C6.22927 9.36429 3.87927 12.8643 3.87927 19.931V24.981C3.87927 33.3976 7.21261 36.7643 15.5459 36.7643H25.5459C33.8793 36.7643 37.2126 33.3976 37.2126 24.981V19.931C37.2126 12.7476 34.7793 9.23095 28.8793 8.36429"
+                  stroke="#FFC700"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h2 class="TitleSession">Projetos</h2>
           </div>
-          <h2 class="TitleSession text-3xl">Projetos</h2>
         </section>
-        <section id="feedProjetos" class="dragscroll">
-          <div class="boxFeed"></div>
-          <div class="boxFeed"></div>
-          <div class="boxFeed"></div>
-          <div class="boxFeed"></div>
-          <div class="boxFeed"></div>
-          <div class="boxFeed"></div>
-        </section>
-        <section id="feedProjetos" class="dragscroll">
-          <div class="boxFeed"></div>
-          <div class="boxFeed"></div>
-          <div class="boxFeed"></div>
-          <div class="boxFeed"></div>
-          <div class="boxFeed"></div>
-          <div class="boxFeed"></div>
+        <section
+          class="w-[100%] flex flex-col lg:flex-row items-center mt-[30px] lg:items-start"
+        >
+          <section id="ProjectsFeed" class="flex flex-col gap-[50px]"></section>
+          <div
+            id="RowsVertical"
+            class="justify-center relative mx-[60px] hidden xl:flex"
+          >
+            <div class="w-[3px] transform bg-[#D0C9AE] h-[100%] absolute"></div>
+            <div
+              class="flex flex-col py-[100px] gap-[220px]"
+              id="DecorationProjects"
+            ></div>
+          </div>
+          <div id="DateProjects"></div>
         </section>
       </article>
-      <article id="Contato" class="sessao pt-[50px] pb-[100px]">
+      <article
+        id="Contato"
+        class="sessao pt-[50px] pb-[100px] flex justify-between items-center"
+      >
         <form
           target="_blank"
           action="https://formsubmit.co/gustavodasilvama10@gmail.com"
@@ -309,59 +368,40 @@
             placeholder="Escreva sua mensagem"
             name="message"
             rows="10"
-            class="inputsForm textBox"
+            class="inputsForm max-h-[170px]"
             required
           ></textarea>
           <div class="alingEnvio">
-            <p>Nos envie um <span class="textDourado">E-mail</span></p>
-            <button type="submit" class="btn btn-lg btn-dark btn-block">
-              <img src="./public/image/send.svg" alt="" class="send-icon" />
+            <p class="text-[#8F8F8F] text-[14px] TextOpenSans">
+              Gostou? Alguma duvida??<br />
+              Me chame!
+            </p>
+            <button
+              type="submit"
+              class="py-[12px] px-[24px] bg-[#ffc700] flex justify-center items-center rounded-[10px] text-[17px] TextRoboto font-semibold text-emphaseTextDourado"
+            >
+              ENVIAR
             </button>
           </div>
         </form>
-        <section id="Links">
-          <p>
-            Se gostou do meu <span class="textDourado">trabalho</span>, não
-            hesite em <br />
-            me chamar!
-          </p>
-          <section class="Conection">
-            <a
-              href="https://www.linkedin.com/in/gustavo-da-silva-5a7551252/"
-              target="_blank"
-            >
-              <div class="box box-normal box-dourada">
-                <img
-                  src="./public/image/iconsLinks/Linkedin.svg"
-                  class="icon"
-                  alt="Icon do Linkedin Svg"
-                />
-              </div>
-            </a>
-
-            <a href="mailto:gustavodasilvama10@gmail.com">
-              <div class="box box-normal box-cinzaclaro">
-                <img
-                  src="./public/image/iconsLinks/Email.svg"
-                  class="icon"
-                  alt="Icon do Emal"
-                />
-              </div>
-            </a>
-          </section>
+        <section class="hidden lg:block">
+          <img src="./public/image/dec_contact.svg" alt="" />
         </section>
       </article>
-      <footer>
-        <section id="footer-Left">
-          <h4 class="cinza">
-            <span class="textDourado">Gustavo</span> da S. Rodrigues
+      <footer class="pb-[30px]">
+        <section class="hidden lg:flex lg:flex-col justify-center">
+          <h4 class="text-cinza text-[36px]">
+            <span class="text-dourado">Gustavo</span> da S. Rodrigues
           </h4>
+          <p class="text-cinza mt-[20px] text-[16px]">
+            &copy; 2024 All rights reserved.
+          </p>
         </section>
         <div id="line">
           <hr class="dividingline" />
           <hr class="dividingline" />
         </div>
-        <section id="footer-Right">
+        <section class="max-w-[345px]">
           <section id="linksBox">
             <a
               href="https://www.linkedin.com/in/gustavo-da-silva-5a7551252/"
@@ -403,9 +443,12 @@
             <div class="box-small box"></div>
             <div class="box-small box"></div>
           </section>
-          <p class="cinza">
-            “ É em meio a <span class="textDourado">dificuldade</span> que se
-            encontra a <span class="textDourado">oportunidade</span> “
+          <p class="text-cinza">
+            “ É em meio a <span class="text-dourado">dificuldade</span> que se
+            encontra a <span class="text-dourado">oportunidade</span> “
+          </p>
+          <p class="block lg:hidden text-cinza mt-[20px] text-[16px]">
+            &copy; 2024 All rights reserved.
           </p>
         </section>
       </footer>
@@ -414,6 +457,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"></script>
     <script src="./public/js/ModalTable.js"></script>
     <script src="./public/js/getSkills.js"></script>
+    <script src="./public/js/ProjectsFeed.js"></script>
     <script src="./public/js/SkillFeed.js"></script>
     <script src="./public/js/MenuMobile.js"></script>
     <script src="./public/js/MenuLinks.js"></script>

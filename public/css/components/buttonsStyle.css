@@ -1,0 +1,9 @@
+.bigButtonEmphase {
+  color: var(--text-dourado-color);
+  font-family: "Roboto";
+  font-weight: bold;
+  background-color: var(--dourado);
+  padding: 18px 36px;
+  border-radius: 10px;
+  font-size: 21px;
+}

@@ -3,16 +3,13 @@
   justify-content: center;
   align-items: center;
   transition: all 0.5s;
-  border-radius: 15px;
-  margin-right: 1.5em;
-  margin-top: 1em;
-  box-shadow: 0px 0px 20px 0px #00000018;
+  border-radius: 25px;
+  box-shadow: 2px 2px 3px 1px #00000010;
   background-color: white;
 }
-.box:hover{
-  transform: scale(1.10);
-  box-shadow: 0px 10px 17px 0px #00000030;
-
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px 1px #00000010;
 }
 .box-normal {
   width: var(--sizeBoxNormal);
@@ -23,16 +20,17 @@
   height: var(--sizeBoxSmall);
   margin: 0%;
 }
-.box-dourada {
-  background-color: #ffc700;
+.box-cinza {
+  background-color: #8b8b8b;
 }
 .box-dourada:hover {
   box-shadow: 0px 0px 20px 2px #ffc70070;
 }
-.box-cinzaclaro {
-  background-color: #8c8c8c;
+.box-bordercinza {
+  background-color: transparent;
+  border: solid 2px #8b8b8b;
 }
-.box-cinzaclaro:hover{
+.box-bordercinza:hover {
   box-shadow: 0px 0px 20px 2px #8c8c8c70;
 }
 

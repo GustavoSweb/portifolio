@@ -2,14 +2,19 @@
   position: absolute;
   width: 100%;
   height: 247.88px;
-  bottom: -100px;
+  bottom: -200px;
 }
 
 #Inicio {
-  height: 800px;
+  height: 100vh;
+  min-height: 650px;
   position: relative;
 }
-
+.links-start {
+  display: flex;
+  margin-top: 42px;
+  flex-direction: column;
+}
 #Conteudo {
   height: 100%;
   display: flex;
@@ -17,20 +22,23 @@
   justify-content: space-between;
 }
 #Box-Titulo-Links {
-  width: 600px;
+  width: 650px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   flex-wrap: wrap;
 
   margin-left: 6vw;
 }
 .Conection {
   display: flex;
+  gap: 10px;
 }
 
 #Titulo {
-  font-size: 50px;
-  font-family: "JetBrains Mono";
+  font-size: 64px;
+  font-family: "Poppins";
+  line-height: 72px;
+  font-weight: medium;
 }
 
 #Background {
@@ -39,4 +47,15 @@
   width: 343.33px;
   height: 358.01px;
   margin-right: 3em;
+}
+
+@media (min-width: 600px) {
+  .links-start {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #Montanhas {
+    bottom: -100px;
+  }
 }

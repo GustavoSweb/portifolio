@@ -4,27 +4,26 @@ header {
   left: 25vw;
   margin-top: 3em;
 }
-#boll{
+#boll {
   width: 11px;
   height: 11px;
   border-radius: 50%;
   background-color: var(--dourado);
   position: absolute;
 }
-.alingLink{
+.alingLink {
   display: flex;
   align-items: center;
-  justify-content: center;                            
+  justify-content: center;
 }
-#Menu li{
+#Menu li {
   transition: all 0.5s;
   z-index: 3;
   opacity: 70%;
 }
-#Menu li:hover{
+#Menu li:hover {
   transform: scale(1.05);
   opacity: 100%;
-
 }
 #Menu {
   list-style: none;
@@ -52,7 +51,6 @@ header {
     justify-content: center;
     flex-direction: column;
     transform: rotate(0deg);
-
   }
   .line {
     width: 30px;
@@ -62,14 +60,14 @@ header {
     background-color: black;
     border-radius: 3px;
   }
-  .line:nth-child(1){
+  .line:nth-child(1) {
     transform: rotate(0deg) translateY(0px) translateX(0px);
     transition: 1s all;
   }
-  .line:nth-child(3){
+  .line:nth-child(3) {
     transform: rotate(0deg) translateY(0px) translateX(0px);
     transition: 1s all;
-}
+  }
   .line:nth-child(2) {
     width: 40px;
     opacity: 100%;
@@ -83,6 +81,7 @@ header {
     flex-direction: column;
     height: 0em;
     width: 55px;
+    min-width: 0px;
     padding: 15px 10px 30px 10px;
     border-radius: 30px 30px 0px 0px;
     transform: translateY(20em);

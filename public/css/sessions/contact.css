@@ -7,19 +7,6 @@
   display: flex;
   justify-content: space-around;
 }
-.alingEnvio p {
-  font-family: var(--font-family);
-  font-size: small;
-  margin-right: 6em;
-}
-.alingEnvio button {
-  border: none;
-  height: 40px;
-  width: 80px;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 3px 3px 10px 0px #00000016;
-}
 .send-icon {
   width: 100%;
   height: 100%;
@@ -42,13 +29,16 @@
   max-width: 400px;
   padding: 0.9em;
   margin-bottom: 1.5em;
-
+  background-color: #efefef;
   box-shadow: 0px 0px 20px 0px #00000013;
   border-radius: 15px;
 
   font-family: "JetBrains Mono";
   outline: none;
-  border: 1px solid #ffc80040;
+  border: 1px solid #00000020;
+  transition: all 0.5s ease-in-out;
 }
-.textBox {
+.inputsForm:focus {
+  background-color: white;
+  border: 1px solid var(--dourado);
 }
