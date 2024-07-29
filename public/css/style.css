@@ -19,6 +19,13 @@ html {
   scroll-behavior: smooth;
 }
 
+#mask {
+  width: 100%;
+  position: absolute;
+  top: -246px;
+  left: -15px;
+}
+
 .TextPoppins {
   font-family: "Poppins";
 }

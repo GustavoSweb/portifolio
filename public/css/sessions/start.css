@@ -47,6 +47,7 @@
   width: 343.33px;
   height: 358.01px;
   margin-right: 3em;
+  position: relative;
 }
 
 @media (min-width: 600px) {
