@@ -50,7 +50,7 @@ async function createFeed() {
                 class="lg:pr-[44px] min-w-[100%] min-h-[100%] lg:min-h-0 lg:min-w-0 flex flex-col items-center"
               >
                 <img
-                  src="./public/image/TestImages/Project.png"
+                  src="${project.url_img}"
                   alt=""
                   class="w-[100%] h-[100%] lg:max-w-[223px] lg:max-h-[120px]"
                 />
