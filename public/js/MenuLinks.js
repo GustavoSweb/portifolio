@@ -1,6 +1,18 @@
 const icons = document.querySelectorAll(".linkMenu");
 const sessoes = document.querySelectorAll(".sessao");
 const boll = document.getElementById("boll");
+const header = document.getElementsByTagName("header");
+var formerScrollPosition = 0;
+
+document.addEventListener("scroll", () => {
+  if (formerScrollPosition > window.scrollY) {
+    header[0].style = "top: 0px";
+  } else {
+    header[0].style = "top: -73px";
+  }
+  formerScrollPosition = window.scrollY;
+});
+
 function SelectPath(icon, color) {
   if (!icon || !color) return;
   let paths = icon.children;
@@ -11,7 +23,6 @@ function SelectPath(icon, color) {
 
 function ScrollLinks() {
   let select;
-  boll.style = `left:${icons[0].getBoundingClientRect().left - 320}px`;
   document.addEventListener("scroll", () => {
     const pageY = window.scrollY;
 
@@ -27,7 +38,6 @@ function ScrollLinks() {
         var icon = icons[index];
         SelectPath(select, "#ACACAC");
         SelectPath(icon, "black");
-        boll.style = `left:${icon.getBoundingClientRect().left - 320}px`;
         select = icon;
       }
     }

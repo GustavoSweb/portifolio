@@ -47,14 +47,14 @@ async function createFeed() {
               class="CardProjects max-w-[90vw] lg:max-w-[872px] flex flex-col lg:flex-row bg-white rounded-sm shadow-sm lg:p-[22px]"
             >
               <div
-                class="lg:pr-[44px] min-w-[100%] min-h-[100%] lg:min-h-0 lg:min-w-0"
+                class="lg:pr-[44px] min-w-[100%] min-h-[100%] lg:min-h-0 lg:min-w-0 flex flex-col items-center"
               >
                 <img
                   src="./public/image/TestImages/Project.png"
                   alt=""
                   class="w-[100%] h-[100%] lg:max-w-[223px] lg:max-h-[120px]"
                 />
-                <div class="SkillsProjects flex  justify-around mt-[22px]">
+                <div class="SkillsProjects gap-[10px] mt-[22px] hidden md:flex">
                 ${feedSkills}
   </div>
 
@@ -68,6 +68,7 @@ async function createFeed() {
                     <h4 class="text-[30px] TextPoppins font-medium">
                       ${project.title}
                     </h4>
+                    
                   </div>
                   <div class="hidden gap-[22px] lg:flex">
                     <a href="${project.url}" target="_blank">
@@ -130,6 +131,9 @@ async function createFeed() {
                 >
                   ${project.description}
                 </p>
+                <div class="SkillsProjects gap-[10px] mt-[22px] flex md:hidden">
+                  ${feedSkills}
+    </div>
                 <div class="flex gap-[22px] mt-[20px] lg:hidden">
                   <a href="https://www.youtube.com/" target="_blank">
                     <div

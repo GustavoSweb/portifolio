@@ -1,15 +1,16 @@
 header {
-  z-index: 1;
   position: fixed;
-  left: 25vw;
-  margin-top: 3em;
-}
-#boll {
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background-color: var(--dourado);
-  position: absolute;
+  left: 5vw;
+  z-index: 50;
+  box-shadow: 0px 0px 30px 0px #00000010;
+  transition: all 0.5s ease-out;
+  width: 90vw;
+  margin-top: 1em;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 8px;
 }
 .alingLink {
   display: flex;
@@ -29,16 +30,12 @@ header {
   list-style: none;
   display: flex;
   justify-content: space-around;
-
-  padding: 10px 13vw 10px 13vw;
+  max-width: 200px;
 
   box-sizing: border-box;
 
   min-width: 300px;
-  border-radius: 30px;
-
-  background-color: white;
-  box-shadow: 0px 0px 30px 0px #00000010;
+  border-radius: 8px;
 }
 
 @media (max-width: 900px) {
@@ -76,16 +73,24 @@ header {
   header {
     left: calc(100vw - (55px + 30px));
     top: calc(100vh - (20em + 110px + 30px));
+    width: 55px;
+    box-shadow: none;
+    background-color: #00000000;
+    padding: 0px;
+    margin-top: 3em;
   }
   #Menu {
     flex-direction: column;
     height: 0em;
     width: 55px;
     min-width: 0px;
+
     padding: 15px 10px 30px 10px;
     border-radius: 30px 30px 0px 0px;
     transform: translateY(20em);
     overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 0px 30px 0px #00000010;
   }
   #LinksNav {
     display: flex;
