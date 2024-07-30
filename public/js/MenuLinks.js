@@ -5,12 +5,14 @@ const header = document.getElementsByTagName("header");
 var formerScrollPosition = 0;
 
 document.addEventListener("scroll", () => {
-  if (formerScrollPosition > window.scrollY) {
-    header[0].style = "top: 0px";
-  } else {
-    header[0].style = "top: -73px";
+  if (window.innerWidth > 900) {
+    if (formerScrollPosition > window.scrollY) {
+      header[0].style = "top: 0px";
+    } else {
+      header[0].style = "top: -73px";
+    }
+    formerScrollPosition = window.scrollY;
   }
-  formerScrollPosition = window.scrollY;
 });
 
 function SelectPath(icon, color) {
