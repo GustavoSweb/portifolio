@@ -2,9 +2,7 @@ const content_skills = document.getElementById("content-skills");
 
 async function getSkills() {
   try {
-    const skills = await axios.get(
-      "https://tefly-production.up.railway.app/skills"
-    );
+    const skills = await axios.get("http://3.91.21.211/skills");
     return skills.data;
   } catch (err) {
     console.error(err);
