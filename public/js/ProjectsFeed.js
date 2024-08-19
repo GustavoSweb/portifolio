@@ -1,6 +1,6 @@
 async function getProjects() {
   try {
-    const projects = await axios.get("http://3.91.21.211/projects");
+    const projects = await axios.get("https://3.88.87.85/projects");
     return projects.data;
   } catch (err) {
     console.error(err);

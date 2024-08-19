@@ -2,7 +2,7 @@ const content_skills = document.getElementById("content-skills");
 
 async function getSkills() {
   try {
-    const skills = await axios.get("http://3.91.21.211/skills");
+    const skills = await axios.get("https://3.88.87.85//skills");
     return skills.data;
   } catch (err) {
     console.error(err);

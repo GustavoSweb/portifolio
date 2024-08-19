@@ -9,7 +9,7 @@ setTimeout(() => {
 
   async function get_projects_skill(id) {
     const { data } = await axios.get(
-      `http://3.91.21.211//skills/${id}/projects`
+      `https://3.88.87.85/skills/${id}/projects`
     );
     projectsSkillFeed.innerHTML = "";
     console.log(data);
