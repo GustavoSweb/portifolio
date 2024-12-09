@@ -31,7 +31,7 @@ async function createFeed() {
       return `
         
     <img
-      src="${skill.background_url}"
+      src="${skill.urlBackground}"
       alt=""
       class="h-[20px] "
     />
@@ -50,7 +50,7 @@ async function createFeed() {
                 class="lg:pr-[44px] min-w-[100%] min-h-[100%] lg:min-h-0 lg:min-w-0 flex flex-col items-center"
               >
                 <img
-                  src="${project.url_img}"
+                  src="${project.urlBackground}"
                   alt=""
                   class="w-[100%] h-[100%] lg:max-w-[223px] lg:max-h-[120px]"
                 />
@@ -66,7 +66,7 @@ async function createFeed() {
                       Construção: ${project.production_time}
                     </h6>
                     <h4 class="text-[30px] TextPoppins font-medium">
-                      ${project.title}
+                      ${project.name}
                     </h4>
                     
                   </div>
@@ -96,7 +96,7 @@ async function createFeed() {
                         </svg>
                       </div>
                     </a>
-                    <a href="${project.url_repository}" target="_blank">
+                    <a href="${project.repository}" target="_blank">
                       <div
                         class="border-2 border-[#686868] p-[7px] rounded-[10px] transform scale-1 hover:scale-110 transition-all ease-in-out duration-500 cursor-pointer"
                       >

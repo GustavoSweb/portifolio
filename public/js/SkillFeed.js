@@ -22,7 +22,7 @@ setTimeout(() => {
       div.classList.add("relative");
       a.href = project.url;
       a.target = "_blank";
-      img.src = project.url_img;
+      img.src = project.urlBackground;
       img.classList.add(
         "h-[115px",
         "w-[204.49px",

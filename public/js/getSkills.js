@@ -19,10 +19,10 @@ async function appendChildSkills() {
       console.log(skill);
       const div = document.createElement("div");
       const img = document.createElement("img");
-      img.src = skill.background_url;
+      img.src = skill.urlBackground;
       img.classList.add("w-[70%]", "h-[70%]");
       div.id = skill.id;
-      div.title = skill.title;
+      div.title = skill.name;
       div.classList.add(
         "h-[100px]",
         "w-[100px]",
