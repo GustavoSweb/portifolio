@@ -1,6 +1,8 @@
 async function getProjects() {
   try {
-    const projects = await axios.get("https://3.88.87.85/projects");
+    const projects = await axios.get(
+      "https://projects-api-q2ba.onrender.com/projects"
+    );
     return projects.data;
   } catch (err) {
     console.error(err);
