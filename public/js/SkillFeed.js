@@ -9,7 +9,7 @@ setTimeout(() => {
 
   async function get_projects_skill(id) {
     const { data } = await axios.get(
-      `https://projects-api-q2ba.onrender.com/${id}/projects`
+      `https://projects-api-q2ba.onrender.com/skills/${id}/projects`
     );
     projectsSkillFeed.innerHTML = "";
     console.log(data);
