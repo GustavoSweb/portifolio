@@ -33,7 +33,7 @@ setTimeout(() => {
       );
       a.appendChild(img);
       div.appendChild(a);
-      h4.innerText = project.title;
+      h4.innerText = project.name;
       divInfo.appendChild(h4);
       divInfo.classList.add(
         "bg-white",
